@@ -66,9 +66,11 @@ function printBookDetails(book: Book): string {
     return `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${availability}`;
 }
 
-function getUniqueValues(arr1: number[], arr2: number[]): number[] {
-    const result: number[] = [];
-    function addUniqueValues(value: number) {
+
+
+function getUniqueValues <T extends string | number>(arr1: T[], arr2: T[]): T[] {
+    const result: T[] = [];
+    function addUniqueValues(value: T) {
         for (let i = 0; i < result.length; i++) {
             if (result[i] === value) return;
         }
