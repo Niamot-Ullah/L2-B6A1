@@ -1,5 +1,5 @@
 3. Explain the difference between any, unknown, and never types in TypeScript.
-- any: যখন একটি ভেরিয়েবলকে any হিসেবে টাইপ করা হয়, তখন আমরা এতে যেকোনো ধরণের মান নির্ধারণ করতে পারি এবং typescript type error ছাড়াই আমরা এতে যেকোনো অপারেশন করতে পারি।
+- any: যখন একটি ভেরিয়েবলকে any হিসেবে টাইপ করা হয়, তখন আমরা এতে যেকোনো ধরণের মান নির্ধারণ করতে পারি এবং typescript type error ছাড়াই আমরা এতে যেকোনো অপারেশন করতে পারি। <br>
 let value: any = "hello";
 value = 123;
 value.toUpperCase();
