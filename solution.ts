@@ -33,9 +33,11 @@ class Person {
         this.age = age;
     }
     getDetails() {
-        return `Name: ${this.name}, Age: ${this.age}`;
+        return `'Name: ${this.name}, Age: ${this.age}'`;
     }
 }
+
+
 
 type Item = {
     title: string;
@@ -44,6 +46,8 @@ type Item = {
 function filterByRating(value: Item[]): Item[] {
     return value.filter((item: Item) => item.rating >= 4.0);
 }
+
+
 
 type user = {
     id: number;
@@ -55,6 +59,8 @@ function filterActiveUsers(users: user[]): user[] {
     return users.filter((user: user) => user.isActive);
 }
 
+
+
 interface Book {
     title: string;
     author: string;
@@ -63,8 +69,10 @@ interface Book {
 }
 function printBookDetails(book: Book): string {
     const availability = book.isAvailable ? "Yes" : "No";
-    return `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${availability}`;
+    console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${availability}`);
+    return '';
 }
+
 
 
 
